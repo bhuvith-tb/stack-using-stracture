@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int gcd(int a,int b)
+{
+    if (a==b)
+        return a;
+    else if(a>b)
+        return(a-b,b);
+    return gcd(b,a-b);
+}
+int main()
+{
+    int a,b;
+    printf("\enter values of a and b :");
+    scanf("%d%d",&a,&b);
+    printf("\n gcd of %d and %d is %d\n ",a,b,gcd(a,b));
+    return 0;
+}
